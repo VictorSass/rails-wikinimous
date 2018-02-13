@@ -1,0 +1,82 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 65%;
+}
+
+.link {
+  text-decoration: none;
+  color: #228CDB;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
+
+.link:hover {
+  color: #0B7189;
+}
+
+p {
+  padding: 1px 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: lighter;
+  color: rgb(80,80,80);
+  letter-spacing: 0.4px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(250,250,250);
+  align-items: center;
+  padding: 0px 15px;
+  margin: 0px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(235,235,235);
+  height: 8vh;
+}
+
+.link-add {
+  font-size: lighter;
+  color: rgb(120,120,120);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar p {
+  padding: 0px;
+  margin: 0px;
+  color: rgb(120,120,120);
+  font-size: 19px;
+}
+
+.wrapper-grey {
+  margin: 0px;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 35px;
+}
+
+.header-main h1 {
+  flex-grow: 1;
+}
+
+.icone {
+  padding: 0px 5px;
+  color: #C1DFF0;
+}
+
+.picture {
+  width: 500px;
+  height: 25%;
+}

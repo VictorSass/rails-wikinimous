@@ -1,0 +1,25 @@
+<div class="wrapper-grey">
+  <div class="container">
+    <div class="main">
+      <div class="header-main">
+        <h1><%= @article.title %></h1>
+        <div class="icone">
+          <%= link_to edit_article_path(@article) do %>
+            <i class="fas fa-pencil-alt"></i>
+          <% end %>
+        </div>
+        <div class="icone">
+          <%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure?" } do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </div>
+      </div>
+        <p><%= @article.content %></p>
+        <div class="picture">
+          <img src="<%= @article.picture %>" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+

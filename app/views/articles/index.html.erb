@@ -1,0 +1,12 @@
+<div class="wrapper-grey">
+  <div class="container">
+    <div class="main">
+      <% @articles.each do |article| %>
+        <div class="article_listed">
+          <%= link_to article.title, article_path(article), class: "link" %>
+          <p><%= article.content[0...100] %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

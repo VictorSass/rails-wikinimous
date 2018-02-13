@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts 'Creating 10 fake articles...'
+10.times do
+  article = Article.new(
+    title:    Faker::Educator.course,
+    content:  Faker::Lorem.paragraph(2),
+    picture:  "http://www.netnoo.com/wp-content/uploads/2017/06/llll.jpg"
+    )
+  article.save!
+end
+puts 'Finished!'
